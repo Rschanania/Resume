@@ -24,6 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'grbaqxf3&*^rohdhgtp01aq%3d!1&%d8pga^@a!p_15y367o@m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+
+
+# DEBUG = True
+
+# ALLOWED_HOSTS = []
+
+
 DEBUG = False
 
 ALLOWED_HOSTS = ['https://rschananiaresume.herokuapp.com/']
@@ -129,7 +137,7 @@ os.makedirs(STATIC_TMP, exist_ok=True)
 os.makedirs(STATIC_ROOT, exist_ok=True)
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_URL,
 ]
 
 
